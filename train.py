@@ -16,10 +16,11 @@ from pyspark.sql.functions import col
 spark = SparkSession.builder.master('local[*]').appName('Mediacal_cost_prediction').getOrCreate()
 
 df = spark.read.csv('./data/medical.csv', header=True, inferSchema=True)
+df = df.filter(df['charges'] < 35000)
+df = df.filter(df['bmi'] < 45)
 
 # Take only categorical_cols
 categorical_cols = [col for col in df.columns if col not in {'age', 'bmi', 'children', 'charges'}]
-
 
 # Index categorial columns
 string_indexer = StringIndexer(inputCols=categorical_cols,
