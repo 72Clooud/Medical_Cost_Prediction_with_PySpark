@@ -1,7 +1,21 @@
-# Medical_Cost_Prediction_with_PySpark
-## Project Overview
-Medical Cost Prediction with PySpark is a machine learning project aimed at predicting medical insurance costs based on various factors such as age, gender, BMI, smoking habits, and region. This project leverages PySpark for scalable data processing and machine learning. It is an essential tool for insurance companies, healthcare organizations, and researchers looking to understand cost patterns and improve decision-making processes.
-## Technologies Used
-- Python
-- PySpark – for scalable data preprocessing and building machine learning models.
-- Matplotlib/Seaborn – for visualization
+# Medical Cost Prediction with PySpark 🏥💻
+
+This project predicts **medical insurance costs** based on factors like **age**, **gender**, **BMI**, **smoking habits**, and **region**. Using **PySpark** for scalable data processing and machine learning, it uncovers valuable insights for insurance companies, healthcare organizations, and researchers.
+
+## Technologies Used 🔧
+- **Python** 🐍
+- **PySpark** 🔥 (for data processing and machine learning)
+- **Matplotlib/Seaborn** 📊 (for data visualization)
+
+## Installation ⚙️
+
+Clone the repository:
+```bash
+git clone https://github.com/72Clooud/Medical_Cost_Prediction_with_PySpark.git
+```
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+## License 📜
+This project is licensed under the MIT License.
